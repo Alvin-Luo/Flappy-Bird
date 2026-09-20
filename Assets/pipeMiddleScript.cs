@@ -28,7 +28,7 @@ public class pipeMiddleScript : MonoBehaviour
     {
         // Reference variable "deadBird" from component "BirdScript" in game object tagged as "Bird"
         // Now score will not be added after a game over
-        if (collision.gameObject.tag == "Player" && !script.deadBird)
+        if (collision.gameObject.tag == "Bird" && !script.deadBird)
         {
             logic.addScore(1);
 
